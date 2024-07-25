@@ -1,0 +1,89 @@
+.standard-btn{
+    height: 3rem;
+    padding: 0 2rem;
+    font-size: 15pt;
+}
+/* =============== HEADER =============== */
+.header .navbar ul{
+    gap: 4rem;
+}
+.header .navbar ul li{
+    font-size: 18pt;
+    font-weight: 700;
+}
+.close-menu-icon{
+    font-size: 4rem;
+}
+.header .menu-icon{
+    font-size: 4rem;
+}
+/* =============== HOME =============== */
+.home img{
+    width: 15rem;
+}
+.home h1{
+    font-size: 22pt;
+}
+.home p{
+    font-size: 15pt;
+}
+
+/* =============== BLACK BACKGROUND =============== */
+.black-bg h1{
+    font-size: 36pt;
+}
+.black-bg h1::after{
+    width: 40%;
+}
+.black-bg h1.titles-scroll::after{
+    animation: titlesScroll 1s 2 linear;
+}
+@keyframes titlesScroll {
+    0%{
+        width: 40%
+    }
+    50%{
+        width: 80%;
+    }
+    100%{
+        width: 40%
+    }
+}
+
+
+/* =============== ABOUT =============== */
+.about p{
+    line-height: 1.6;
+}
+
+
+/* =============== PRE CODE =============== */
+.pre-code{
+    height: 25rem;
+}
+.pre-code img, .pre-code code pre{
+    height: 25rem;
+    width: 25rem;
+}
+.pre-code code pre{
+    padding: 5rem 2rem;
+}
+
+
+/* =============== SERVICES =============== */
+.yellow-circle, .service img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.service img{
+    top: 1rem;
+    left: 1rem;
+}
+.service:nth-of-type(1) img{
+    width: 4rem;
+    height: 4rem
+}
+.service h2{
+    font-size: x-large;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,163 @@
+.standard-btn{
+    height: 2.7rem;
+    padding: 0 1rem;
+    font-size: 14pt;
+}
+
+.scroll-to-bottom{
+    top: 90vh;
+}
+/* =============== HEADER =============== */
+.header{
+    padding: 0 8vw;
+}
+.header .menu-icon, .header .close-menu-icon{
+    display: none;
+}
+.header img{
+    width: 15vw;
+    margin-top: 1vw;
+}
+.header .navbar{
+    transform: translate(0%);
+    width: fit-content;
+    height: auto;
+    width: fit-content;
+    background: transparent;
+    position: unset;
+}
+.header .navbar ul{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.header .navbar ul li{
+    text-transform: none;
+    border-bottom: 1px solid var(--white);
+    font-size: 13pt;
+    font-weight: unset !important;
+    padding: 1rem 1rem;
+    position: relative;
+    cursor: pointer; 
+}
+.header .navbar ul li a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: var(--teal);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.header .navbar ul li:hover a:after{
+    width: 100%; 
+    left: 0;
+}
+.header .navbar ul li:hover a{
+    color: var(--teal);
+}
+.header .navbar ul li:hover{
+    border-bottom: 1px solid var(--teal);
+}
+
+/* =============== HOME =============== */
+.home{
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 10vh;
+}
+.home img {
+    width: 23vw;
+}
+.home div{
+    width: 55vw;
+}
+.home h1{
+    font-size: 23pt;
+}
+.home p{
+    font-size: 13pt;
+}
+
+/* =============== BLACK BG =============== */
+.black-bg{
+    padding: 20vh 8vw;
+}
+.black-bg h1{
+    margin-bottom: 8rem;
+}
+.black-bg h1::after{
+    bottom: -15px
+}
+
+
+/* =============== ABOUT =============== */
+.about{
+    height: 100vh;
+}
+
+
+/* =============== SERVICES =============== */
+.services-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.services-container .service{
+    width: 30vw;
+    height: 25rem;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+.yellow-circle{
+    margin-bottom: 6rem;
+}
+
+
+/* =============== PROJECTS =============== */
+.projects p{
+    display: block;
+    width: 100%;
+    padding: 0 8vw;
+    margin-bottom: 15vh;
+    font-size: 14pt;
+    color: rgb(170, 170, 170);
+}
+.projects-card{
+    gap: 15vh;
+}
+.project h2{
+    font-size: x-large;
+    margin: 2rem 0;
+}
+
+
+/* =============== FOOTER =============== */
+footer{
+    padding: 4rem 5vw;
+}
+footer div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-description{
+    width: 60%;
+}
+.footer-links{
+    width: 20%
+}
+.footer-links ul{
+    display: flex;
+    gap: 2rem
+}
+.footer-copyright{
+    margin-top: 6rem
+}

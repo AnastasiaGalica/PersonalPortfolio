@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anastasia Galica - Frontend Developer</title>
+    <link type="image/png" sizes="192x192" rel="icon" href="img/favicons/android-chrome-192x192.png">
+    <link type="image/png" sizes="512x512" rel="icon" href="img/favicons/android-chrome-512x512.png">
+    <link type="image/png" sizes="180x180" rel="icon" href="img/favicons/apple-touch-icon.png">
+    <link type="image/png" sizes="16x16" rel="icon" href="img/favicons/favicon-16x16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicons/favicon-32x32.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="styles/styles-600.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/styles-768.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/styles-992.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/styles-1200.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css"/>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header header-scroll" id="header">
+        <img src="img/logo.png" alt="AnastasiaG" id="header-img">
+        <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
+
+        <nav class="navbar" id="navbar">
+            <ul id="navbar-list" class="centered-items tahoma">
+                <i class="fa-solid fa-circle-xmark close-menu-icon" onclick="openMenu()"></i>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        
+        <a href="#about" class="scroll-to-bottom abs-centered centered-items"><i class="fa-solid fa-arrow-down arrow-down"></i></a>
+
+
+        <!--=============== MAIN ===============-->
+        <section class="home centered-items" style="overflow-x: hidden;">
+            <img src="img/profil.png" class="home-scroll">
+
+            <div class="home-scroll">
+                <h1>Hello, I am a <span class="auto-type"></span></h1>
+                <p>
+                    I design and code beautiful and fully responsive websites.
+                </p>
+                <button class="standard-btn">Contact me!</button>
+            </div>
+
+
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed(".auto-type", {
+                    strings : ["Front-end Developer."],
+                    typeSpeed : 150,
+                    backSpeed : 150,
+                    loop: true
+                })
+            </script>
+        </section>
+
+
+        <!--=============== ABOUT ===============-->
+        <section class="about black-bg" id="about">
+            <h1 class="lucida">About Me</h1>
+            <p class="tahoma hidden">
+                I specialize in building responsive websites
+                from the ground up. I like to bring designs to life 
+                with clean, maintainable code.<br>My journey in web 
+                development is driven by a continuous desire to 
+                learn and evolve. Whether it's mastering new 
+                frameworks or refining my existing skills, I am 
+                dedicated to creating intuitive and engaging user 
+                experiences.
+            </p>
+        </section>
+        
+
+        <!-- =============== PRE CODE =============== -->
+        <section class="pre-code black-bg">
+            <!--class="black-bg centered-items"-->
+            <img src="img/lock-bg2.png" class="abs-centered">
+            <code>
+                <pre class="abs-centered" id="rotateElement">
+<span class="code-element">&lt;section</span> <span class="clear-blue">class</span>=<span class="brown">&quot;welcome&quot;</span>&gt;</span>
+    <span class="code-element">&lt;h1&gt;</span>This is a secret room<span class="code-element">&lt;/h1&gt;</span>
+    <span class="code-element">&lt;p&gt;</span>Please do not read this. This is a dangerous secret that you should not know about..<span class="code-element">&lt;/p&gt;</span>
+    <span class="code-element">&lt;br&gt;</span>
+    <span class="code-element">&lt;h1&gt;</span>Keep scrolling..<span class="code-element">&lt;/h1&gt;</span>
+    <span class="code-element">&lt;div&gt;</span>
+        <span class="code-element">&lt;h3&gt;</span>? ..<span class="code-element">&lt;/h3&gt;</span>
+        <span class="code-element">&lt;p&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quos.<span class="code-element">&lt;/p&gt;</span>
+        <span class="code-element">&lt;a</span> <span class="clear-blue">href</span>=<span class="brown">&quot;#&quot;</span> <span class="code-element">&gt;</span>Keep scrolling..<span class="code-element">&lt;/a&gt;</span>
+    <span class="code-element projects-typed"></span>
+
+                </pre>
+            </code>
+
+        
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var code = new Typed(".projects-typed", {
+                    strings : ["&lt;/div&gt;<br>&lt;/section&gt;"],
+                    typeSpeed : 150,
+                    backSpeed : 150,
+                    loop: true
+                })
+            </script>
+        </section>
+
+
+        <!-- =============== SERVICES =============== -->
+        <section class="services black-bg" id="services">
+            <h1 class="lucida">My Services</h1>
+
+            <div class="services-container centered-items">
+
+            <div class="service hidden">
+                <div class="yellow-circle">
+                    <img src="img/figma-logo.png" alt="Figma Logo">
+                </div>
+
+                <div>
+                    <h2 class="lucida">Figma Design</h2>
+                    <p class="tahoma"r>Creating intuitive and visually appealing designs using Figma.</p>
+                </div>
+            </div>
+
+            <div class="service hidden">
+                <div class="yellow-circle">
+                    <img src="img/html-logo.png" alt="HTML Logo">
+                </div>
+                
+                <div>
+                    <h2 class="lucida">Frontend Development</h2>
+                    <p class="tahoma"r>Responsive websites, smooth user experiences and ongoing maintenance.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- =============== PROJECTS =============== -->
+        <section class="projects black-bg" id="projects">
+            <h1 class="lucida">My Projects</h1>
+            <p>Here you will find some of the personal and clients projects that I created with each project containing its own case study </p>
+
+            <div class="projects-card centered-items">
+                <div class="project hidden">
+                    <img src="img/gallery2-desktop.png" alt="Gallery Website">
+                    <h2 class="lucida">Gallery Website of the Maghreb</h2>
+                    <p class="tahoma">A modern, responsive website developed with
+                    HTML and CSS, featuring dynamic animations powered by JavaScript.</p>
+                </div>
+
+                <div class="project hidden">
+                    <img src="img/informatique-desktop.png" alt="Gallery Website">
+                    <h2 class="lucida">Website of a faculty (ENS)</h2>
+                    <p class="tahoma">Developed with Html, Css, javascript
+                    and PHP. Was recognized as the best project in my faculty.</p>
+                </div>
+            </div>
+
+            <h1 class="lucida">And more..</h1>
+        </section>
+    </main>
+    
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer" id="contact">
+        <div class="hidden">
+            <div class="footer-description centered-items">
+                <h2 class="lucida">Anastasia Galica</h2>
+                <p class="tahoma">Passionate Frontend Developer specializing in 
+                creating intuitive and responsive web interfaces 
+                using modern technologies and tools.</p>
+            </div>
+        
+            <div class="footer-links">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/anastasia-frontend-5a519731b/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/AnastasiaGalica"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://dev.to/anastasia_galica"><i class="fa-brands fa-dev"></i></a></li>
+                    <li><a href="https://github.com/AnastasiaGalica"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright hidden">
+            <p>© Copyright2024 - Made by <span>Anastasia Galica</span></p>
+        </div>
+
+    </footer>
+
+    
+</body>
+</html>

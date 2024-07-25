@@ -1,0 +1,26 @@
+.standard-btn{
+    height: 2.9rem;
+    padding: 0 2rem;
+    font-size: 15pt;
+}
+
+/* =============== HEADER =============== */
+.header .navbar ul li{
+    font-size: 14pt;
+}
+.home div>*{
+    margin-bottom: 1rem;
+}
+.home h1{
+    font-size: 28pt;
+}
+.home p{
+    font-size: 14pt;
+}
+
+
+/* =============== SERVICES =============== */
+.services-container .service{
+    padding: 4rem;
+}
+
