@@ -226,7 +226,6 @@ i{
 /* =============== HOME =============== */
 .home{
     flex-direction: column;
-    background-image: url(../img/bg-violet.png);
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
