@@ -4,11 +4,26 @@
     font-size: 17pt;
 }
 /* =============== HEADER =============== */
+.header{
+    padding: 8rem 4rem;
+}
 .header .navbar ul li{
-    font-size: 25pt;
+    font-size: 23pt;
     font-weight: 700;
 }
-
+.header img{
+    width: 10rem;
+}
+.header .navbar > ul{
+    padding-top: 30vh;
+    padding-left: 7rem;
+}
+.navbar-contact{
+    padding-left: 7rem;
+}
+.navbar-contact h2{
+    font-size: 23pt
+}
 /* =============== HOME =============== */
 .home img{
     width: 15rem;

@@ -7,6 +7,7 @@
     <link type="image/png" sizes="180x180" rel="icon" href="img/favicons/apple-touch-icon.png">
     <link type="image/png" sizes="16x16" rel="icon" href="img/favicons/favicon-16x16.png">
     <link type="image/png" sizes="32x32" rel="icon" href="img/favicons/favicon-32x32.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicons/favicon.png">
     <link rel="manifest" href="img/favicons/site.webmanifest">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,17 +24,29 @@
     <!--=============== HEADER ===============-->
     <header class="header header-scroll" id="header">
         <img src="img/logo.png" alt="AnastasiaG" id="header-img">
-        <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
+        <i class="fa-solid fa-bars bars-icon" id="bars-icon" onclick="openMenu()"></i>
 
         <nav class="navbar" id="navbar">
-            <ul id="navbar-list" class="centered-items tahoma">
-                <i class="fa-solid fa-circle-xmark close-menu-icon" onclick="openMenu()"></i>
+            <img src="img/logo-purple.png" alt="AnastasiaG">
+            <i class="fa-solid fa-xmark close-icon" id="close-icon" onclick="openMenu()"></i>
+
+            <ul id="navbar-list" class="tahoma">
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" id="contact">Contact</a></li>
             </ul>
+
+            <div class="navbar-contact">
+                <h2 class="lucida">CONTACT ME</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/anastasia-frontend-5a519731b/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/AnastasiaGalica"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://dev.to/anastasia_galica"><i class="fa-brands fa-dev"></i></a></li>
+                    <li><a href="https://github.com/AnastasiaGalica"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -44,7 +57,7 @@
         <a href="#about" class="scroll-to-bottom abs-centered centered-items"><i class="fa-solid fa-arrow-down arrow-down"></i></a>
 
 
-        <!--=============== MAIN ===============-->
+        <!--=============== HOME ===============-->
         <section class="home centered-items" style="overflow-x: hidden;">
             <img src="img/profil.png" class="home-scroll">
 

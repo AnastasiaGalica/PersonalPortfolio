@@ -1,7 +1,7 @@
 /* ============ NAVBAR OPENING ============ */
 
 function openMenu(){
-    document.getElementById("navbar").classList.toggle("open-navbar");
+    document.getElementById("navbar").classList.toggle("navbar-toggle");
 }
 
 

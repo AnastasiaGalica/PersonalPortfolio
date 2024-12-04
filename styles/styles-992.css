@@ -10,36 +10,44 @@
 /* =============== HEADER =============== */
 .header{
     padding: 0 8vw;
-}
-.header .menu-icon, .header .close-menu-icon{
-    display: none;
+    display: flex;
+    justify-content: space-between;
 }
 .header img{
-    width: 15vw;
+    width: 11vw;
     margin-top: 1vw;
+    position: unset;
+}
+.bars-icon, .close-icon, .navbar img{
+    display: none;
+}
+.bars-icon, .close-icon{
+    visibility: hidden;
 }
 .header .navbar{
-    transform: translate(0%);
-    width: fit-content;
-    height: auto;
+    display: flex;
+    height: fit-content !important;
     width: fit-content;
     background: transparent;
     position: unset;
+    margin-top: 3vh;
 }
-.header .navbar ul{
+.header .navbar > ul{
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0;
     gap: 0;
 }
-.header .navbar ul li{
-    text-transform: none;
+.header .navbar>  ul li{
+    color: var(--white);
     border-bottom: 1px solid var(--white);
     font-size: 13pt;
     font-weight: unset !important;
     padding: 1rem 1rem;
+    margin: 0;
     position: relative;
     cursor: pointer; 
 }
@@ -65,7 +73,12 @@
 .header .navbar ul li:hover{
     border-bottom: 1px solid var(--teal);
 }
-
+.navbar-contact{
+    display: none;
+}
+#contact{
+    display: block;
+}
 /* =============== HOME =============== */
 .home{
     flex-direction: row-reverse;

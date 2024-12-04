@@ -3,19 +3,31 @@
     padding: 0 2rem;
     font-size: 15pt;
 }
+
+
 /* =============== HEADER =============== */
 .header .navbar ul{
     gap: 4rem;
+}
+.header img{
+    width: 8rem;
 }
 .header .navbar ul li{
     font-size: 18pt;
     font-weight: 700;
 }
-.close-menu-icon{
-    font-size: 4rem;
+.bars-icon{
+    font-size: 3.5rem;
 }
-.header .menu-icon{
-    font-size: 4rem;
+.close-icon{
+    font-size: 3.8rem
+}
+.header .navbar > ul{
+    padding-top: 28vh;
+    padding-left: 6rem;
+}
+.navbar-contact{
+    padding-left: 6rem;
 }
 /* =============== HOME =============== */
 .home img{

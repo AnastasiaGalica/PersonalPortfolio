@@ -38,7 +38,6 @@
     text-decoration: none;
     scroll-behavior: smooth;
     transition: ease-in-out 0.5s;
-    
 }
 body{
     overflow-x: hidden;
@@ -142,22 +141,39 @@ i{
 .header{
     width: 100%;
     height: 20vh;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 1.5rem 1.5rem;
     position: absolute;
     z-index: 9999;
     top: 0;
     left: 0;
     background-color: transparent;
 }
-.header img{
-    width: 28vw;
+.header img, .navbar img{
+    width: 25vw;
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
 }
-.header .menu-icon{
-    font-size: 2.4rem;
+.bars-icon{
     color: var(--white);
+    font-size: 2.6rem;
+}
+.bars-icon:hover{
+    transform: rotate(180deg);
+}
+.bars-icon, .close-icon{
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+}
+
+/* menu navbar */
+.close-icon{
+    color: var(--primary-color);
+    font-size: 2.7rem;
+}
+.close-icon:hover{
+    transform: rotate(90deg);
 }
 .header .navbar{
     width: 100vw;
@@ -165,48 +181,48 @@ i{
     position: fixed;
     top: 0;
     right: 0;
-    transform: translateY(-100%);
     z-index: 9998;
-    background: var(--primary-color);
+    background: var(--white);
+    display: none;
 }
-.open-navbar{
-    transform: translateY(0%) !important;
+.navbar-toggle{
+    display: block !important;
 }
-.header .navbar ul{
+.header .navbar > ul{
     width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    gap: 7vh;
+    height: fit-content;
+    padding-top: 22vh;
+    padding-left: 4rem;
+    display: block;
 }
 .header .navbar ul li{
-    color: var(--white);
-    text-transform: uppercase;
+    color: var(--primary-color);
     font-size: 15pt;
+    text-align: left;
+    margin-bottom: 2rem;
+    width: fit-content;
+    transition: ease-in-out 0.1s
 }
-.close-menu-icon{
-    position: absolute;
-    top: 4rem;
-    right: 2rem;
-    font-size: 40px;
-    color: var(--golden);
-    overflow: visible;
-    border:none
-}
-.close-menu-icon::after{
-    background: none repeat scroll 0 0 transparent;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -2px;
-    right: -2px;
-    bottom: 0;
-    border: 1px solid #000000;
-    z-index: 20;
-    border-radius: 50%;
-    transform: translate(3px, -3px);
+.header .navbar ul li:hover{
+    transform: scale(1.1);
 }
 
-
+/* navbar contact */
+.navbar-contact{
+    padding-left: 4rem;
+    padding-top: 10vh;
+}
+.navbar-contact h2{
+    color: var(--teal);
+}
+.navbar-contact ul{
+    display: flex !important;
+    gap: 12vw;
+    margin-top: 8vh;
+}
+#contact{
+    display: none;
+}
 /* =============== HOME =============== */
 .home{
     flex-direction: column;

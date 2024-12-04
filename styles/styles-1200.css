@@ -5,9 +5,14 @@
 }
 
 /* =============== HEADER =============== */
+.header img{
+    width: 9vw;
+}
 .header .navbar ul li{
     font-size: 14pt;
 }
+
+/* =============== HOME =============== */
 .home div>*{
     margin-bottom: 1rem;
 }
