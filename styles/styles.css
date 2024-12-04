@@ -225,6 +225,7 @@ i{
 }
 /* =============== HOME =============== */
 .home{
+    background-image: url(../img/bg-violet.png);
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
